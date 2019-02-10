@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//By : Abdullah Shublaq
 package decrypt.by.rsa;
 
 import java.math.BigInteger;
@@ -11,8 +10,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author jit
+ * @author Abdullah Shublaq
  */
+
 public class DecryptByRSA {
 
     public static String decrypt(String message, BigInteger n, int d) {
@@ -32,6 +32,7 @@ public class DecryptByRSA {
         int i = 0;
         int length = message.length();
         boolean oddLength = false;
+        
         if (message.charAt(length - 1) == '*') {
             message = message.substring(0, length - 1);
             length--;
